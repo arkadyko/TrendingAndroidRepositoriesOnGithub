@@ -25,27 +25,6 @@
             android:src="@android:drawable/picture_frame"
             />
 
-<!-- Not used - delete it:
-        <TextView
-            android:id="@+id/id"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_toEndOf="@id/avatar" android:layout_toRightOf="@id/avatar"
-            android:maxLines="1"
-            android:layout_margin="@dimen/text_margin"
-            android:textStyle="bold"
-            />
-        <TextView
-            android:id="@+id/owner_username"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_toEndOf="@id/avatar" android:layout_toRightOf="@id/avatar"
-            android:maxLines="1"
-            android:text=""
-            tools:text="A repo for doing this and that"
-            />
--->
-
         <TextView
             android:id="@+id/full_name"
             android:layout_width="wrap_content"
@@ -107,7 +86,6 @@
             android:text=""
             tools:text="repo url"
             />
-        <!--android:textAppearance="@style/TextAppearance.AppCompat.Small"-->
 
         <LinearLayout
             android:layout_width="wrap_content"
@@ -124,10 +102,6 @@
                 android:layout_height="20dp"
                 android:src="@android:drawable/star_big_off"
                 />
-            <!--android:layout_alignParentBottom="true"-->
-            <!--android:layout_alignParentStart="true" android:layout_alignParentLeft="true"-->
-
-            <!--android:layout_toStartOf="@id/stargazers_count" android:layout_toLeftOf="@id/stargazers_count"-->
 
             <TextView
                 android:id="@+id/stargazers_count"
@@ -138,11 +112,6 @@
                 android:text=""
                 tools:text="333"
                 />
-            <!--android:layout_alignParentBottom="true"-->
-            <!--android:layout_toEndOf="@id/starImage" android:layout_toRightOf="@id/starImage"-->
-
-            <!--android:textAppearance="@style/TextAppearance.AppCompat.Small"-->
-            <!--android:layout_alignParentEnd="true" android:layout_alignParentRight="true"-->
         </LinearLayout>
 
     </RelativeLayout>

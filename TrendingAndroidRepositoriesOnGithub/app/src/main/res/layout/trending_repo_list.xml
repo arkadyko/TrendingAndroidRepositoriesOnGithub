@@ -17,32 +17,3 @@
 
     app:layoutManager="android.support.v7.widget.LinearLayoutManager"
     />
-    <!--android:layout_marginLeft="16dp"-->
-    <!--android:layout_marginRight="16dp"-->
-
-
-    <!--
-    AK:
-    - with it, error: cannot inflate layout:
-        app:layoutManager="LinearLayoutManager"
-    - error: no such class:
-        app:layoutManager="CardViewManager"
-
-    But without
-        app:layoutManager="LinearLayoutManager"
-    the screen is shown empty
-    and there is an indication in the Logcat
-    ...githubreposandroid E/RecyclerView: No adapter attached; skipping layout
-    ...githubreposandroid E/RecyclerView: No adapter attached; skipping layout
-    ...githubreposandroid E/RecyclerView: No layout manager attached; skipping layout
-
-    So, the issue is solved when specifying:
-        app:layoutManager="android.support.v7.widget.LinearLayoutManager"
-    also, people say I might use GridLayoutManager instead:
-    (https://stackoverflow.com/questions/35679776/how-to-set-recyclerview-applayoutmanager-from-xml)
-        app:layoutManager="android.support.v7.widget.GridLayoutManager"
-
-    But there is still:
-    ...githubreposandroid E/RecyclerView: No adapter attached; skipping layout
-    though the screen looks OK...
-    -->
