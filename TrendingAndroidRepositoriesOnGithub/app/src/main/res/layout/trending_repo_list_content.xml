@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:id="@+id/itemView"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="5dp"
+    android:layout_marginLeft="5dp"
+    android:layout_marginRight="5dp"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:minHeight="110dp"
+        >
+
+        <ImageView
+            android:id="@+id/avatar"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_margin="5dp"
+            android:src="@android:drawable/picture_frame"
+            />
+
+<!-- Not used - delete it:
+        <TextView
+            android:id="@+id/id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/avatar" android:layout_toRightOf="@id/avatar"
+            android:maxLines="1"
+            android:layout_margin="@dimen/text_margin"
+            android:textStyle="bold"
+            />
+        <TextView
+            android:id="@+id/owner_username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/avatar" android:layout_toRightOf="@id/avatar"
+            android:maxLines="1"
+            android:text=""
+            tools:text="A repo for doing this and that"
+            />
+-->
+
+        <TextView
+            android:id="@+id/full_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:layout_toEndOf="@id/avatar" android:layout_toRightOf="@id/avatar"
+            android:textColor="@color/colorPrimary"
+            android:maxLines="2"
+            tools:text="repo full_name"
+            />
+
+        <TextView
+            android:id="@+id/description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/full_name"
+            android:layout_toEndOf="@id/avatar" android:layout_toRightOf="@id/avatar"
+            android:textColor="@android:color/black"
+            android:maxLines="2"
+            android:text="No description"
+            tools:text="repo description"
+            />
+
+        <LinearLayout
+            android:id="@+id/language_box"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_below="@id/description"
+            android:layout_toEndOf="@id/avatar" android:layout_toRightOf="@id/avatar"
+            >
+            <TextView
+                android:id="@+id/language_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/language"
+                />
+            <Space
+                android:layout_width="5dp"
+                android:layout_height="match_parent"/>
+            <TextView
+                android:id="@+id/language"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxLines="1"
+                android:text=""
+                tools:text="repo language"
+                />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/url"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="10sp"
+            android:layout_below="@id/language_box"
+            android:layout_toEndOf="@id/avatar" android:layout_toRightOf="@id/avatar"
+            android:maxLines="2"
+            android:text=""
+            tools:text="repo url"
+            />
+        <!--android:textAppearance="@style/TextAppearance.AppCompat.Small"-->
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true" android:layout_alignParentLeft="true"
+            android:orientation="horizontal"
+            android:layout_margin="5dp"
+            >
+
+            <ImageView
+                android:id="@+id/starImage"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@android:drawable/star_big_off"
+                />
+            <!--android:layout_alignParentBottom="true"-->
+            <!--android:layout_alignParentStart="true" android:layout_alignParentLeft="true"-->
+
+            <!--android:layout_toStartOf="@id/stargazers_count" android:layout_toLeftOf="@id/stargazers_count"-->
+
+            <TextView
+                android:id="@+id/stargazers_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="11sp"
+                android:maxLines="1"
+                android:text=""
+                tools:text="333"
+                />
+            <!--android:layout_alignParentBottom="true"-->
+            <!--android:layout_toEndOf="@id/starImage" android:layout_toRightOf="@id/starImage"-->
+
+            <!--android:textAppearance="@style/TextAppearance.AppCompat.Small"-->
+            <!--android:layout_alignParentEnd="true" android:layout_alignParentRight="true"-->
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>

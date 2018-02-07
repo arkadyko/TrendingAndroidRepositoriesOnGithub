@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Trending Android Repositories on Github</string>
+    <string name="issues_title">Repository Issues</string>
+    <string name="welcome">Welcome! \nClick the Open button.</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_trending_repo_list">Trending Android Repositories</string>
+    <string name="title_trending_repo_detail">Repository Details</string>
+    <string name="open">Open</string>
+    <string name="quit">Quit</string>
+    <string name="language">Language: </string>
+</resources>

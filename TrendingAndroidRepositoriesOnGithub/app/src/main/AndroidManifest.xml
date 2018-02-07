@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest
+    package="com.actionnodes.githubreposandroid"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+
+    <application
+        android:name="com.actionnodes.githubreposandroid.common.GithubReposAndroidApp"
+
+        android:icon="@mipmap/ic_launcher"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:allowBackup="false"
+        >
+
+        <activity
+            android:name="com.actionnodes.githubreposandroid.activities.LandingPageActivity"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:label="@string/app_name"
+            >
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+
+        </activity>
+
+        <activity
+            android:name="com.actionnodes.githubreposandroid.activities.RepoListActivity"
+            android:parentActivityName="com.actionnodes.githubreposandroid.activities.LandingPageActivity"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:label="@string/title_trending_repo_list"
+            >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.actionnodes.githubreposandroid.activities.LandingPageActivity"/>
+        </activity>
+
+        <activity
+            android:name="com.actionnodes.githubreposandroid.activities.RepoDetailActivity"
+            android:parentActivityName="com.actionnodes.githubreposandroid.activities.RepoListActivity"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:label="@string/issues_title"
+            >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.actionnodes.githubreposandroid.activities.RepoListActivity"/>
+        </activity>
+
+    </application>
+
+</manifest>
